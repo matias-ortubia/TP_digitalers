@@ -32,7 +32,11 @@ header {
     height: 15rem;
 }
 
+/* Nav */
+
 nav {
+    position: sticky;
+    top: 0;
     background-color: var(--color-black);
     padding-left: 37rem;
 }
@@ -81,13 +85,19 @@ nav {
 /* Main */
 
 main {
+    overflow: clip;
     margin: 0 auto;
     width: 60%;
+    padding-top: 5rem;
     margin-bottom: 7rem;
 }
 
+.pageTitle {
+    margin-bottom: 3rem;
+    font-size: 4.5rem;
+}
+
 .subtitle {
-    margin-top: 5rem;
     margin-bottom: 2rem;
     font-size: 5rem;
     color: var(--color-black);
@@ -96,8 +106,8 @@ main {
 .contentContainer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 3rem;
+    align-items: top;
+    margin-bottom: 10rem;
 }
 
 .text {
@@ -116,9 +126,52 @@ main {
 
 /* Footer */
 footer {
+    padding: 3rem;
     height: 15rem;
     background-color: var(--color-black);
     color: var(--color-white);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+
+footer h3 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.footerCol1 {
+    width: 20%;
+    height: 100%;
+}
+
+.footerCol2 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+}
+
+.footerItems {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.footerItems li {
+    font-size: 1.4rem;
+    list-style: none;
+}
+
+.footerItems li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footerItems li a:hover {
+    color: var(--color-highlight);
 }
 
 @media screen and (min-width: 1020px) {
