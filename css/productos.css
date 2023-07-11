@@ -1,0 +1,28 @@
+.productsTitle {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.productsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 20rem);
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+.productContainer {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.productContainer img {
+    width: 100%;
+}
+
+.productName {
+    font-size: 2rem;
+}
+
+.productDescription {
+    font-size: 1.5rem;
+}
