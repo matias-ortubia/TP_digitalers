@@ -126,7 +126,27 @@ main {
     max-width: 100%;
 }
 
+/* Productos */
+
+.productContainer {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.productContainer img {
+    width: 100%;
+}
+
+.productName {
+    font-size: 2rem;
+}
+
+.productDescription {
+    font-size: 1.5rem;
+}
+
 /* Footer */
+
 footer {
     padding: 3rem;
     height: 15rem;
