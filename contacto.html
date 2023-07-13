@@ -25,11 +25,18 @@
         <form action="">
             <div class="inputContainer">
                 <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" placeholder="Escriba su nombre">
+                <input type="text" id="name" name="name" maxlength="30" 
+                       placeholder="Escriba su nombre">
+            </div>
+            <div class="inputContainer">
+                <label for="surname">Apellido</label>
+                <input type="text" id="surname" name="surname" maxlength="30" 
+                       placeholder="Escriba su apellido">
             </div>
             <div class="inputContainer">
                 <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="Escriba su email">
+                <input type="email" id="email" name="email" maxlength="40" 
+                       placeholder="Escriba su email">
             </div>
             <div class="inputContainer">
                 <label for="motivo">Motivo</label>
@@ -42,7 +49,9 @@
             </div>
             <div class="inputContainer">
                 <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" placeholder="Escriba su mensaje aquí..."></textarea>
+                <textarea name="mensaje" id="mensaje" 
+                          placeholder="Escriba su mensaje aquí..."
+                          maxlength="800"></textarea>
             </div>
             <button type="submit">Enviar</button>
         </form>

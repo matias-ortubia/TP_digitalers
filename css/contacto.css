@@ -28,6 +28,8 @@ form select {
 }
 
 form textarea {
+    font-family: inherit;
+    resize: none;
     padding: 1rem;
     border-radius: 4px;
     width: 50%;
