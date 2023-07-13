@@ -4,8 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NetTech - Contacto</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contacto.css">
 </head>
 <body>
-    
+    <header>
+        <div class="bannerLogoContainer">
+            <h1>NetTech.</h1>
+        </div>
+    </header>
+    <nav>
+        <ul class="navMenu">
+            <li class="navItem"><a href="index.html"><div class="logoContainer"><h1 class="logo">NetTech.</h1></div></li>
+            <li class="navItem"><a href="productos.html">Productos</a></li>
+            <li class="navItem"><a href="noticias.html">Noticias</a></li>
+            <li class="navItem"><a href="#">Servicio Técnico</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="pageTitle">Contactanos!</h2>
+        <form action="">
+            <div class="inputContainer">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" maxlength="30" 
+                       placeholder="Escriba su nombre">
+            </div>
+            <div class="inputContainer">
+                <label for="surname">Apellido</label>
+                <input type="text" id="surname" name="surname" maxlength="30" 
+                       placeholder="Escriba su apellido">
+            </div>
+            <div class="inputContainer">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" maxlength="40" 
+                       placeholder="Escriba su email">
+            </div>
+            <div class="inputContainer">
+                <label for="motivo">Motivo</label>
+                <select name="motivo" id="motivo">
+                    <option value="contulta">Consulta</option>
+                    <option value="opinion">Opinión</option>
+                    <option value="atencion">Atención al cliente</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <div class="inputContainer">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" 
+                          placeholder="Escriba su mensaje aquí..."
+                          maxlength="800"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <section class="footerCol1">
+            <h3>Ayuda</h3>
+            <ul class="footerItems">
+                <li><a href="contacto.html">Contactanos</a></li>
+                <li><a href="#">Sucursales</a></li>
+                <li><a href="#">Trabajá con nosotros</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+            </ul>
+        </section>
+        <div class="footerCol2">
+            <p>© Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

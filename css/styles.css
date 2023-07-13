@@ -1,0 +1,216 @@
+:root {
+    --color-black: #181818;
+    --color-white: #F2F2F2;
+    --color-highlight: #5CB8E4;
+    --color-highlight-lighter: #7accf1;
+    --color-highlight-darker: #3f96bd;
+    --color-banner: #8758FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    margin: 0;
+}
+
+/* Header */
+
+header {
+    background-color: var(--color-banner);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2.5rem;
+    height: 15rem;
+}
+
+.bannerLogoContainer {
+    background-color: var(--color-black);
+    border: 5px solid var(--color-white);
+    width: 40rem;
+    height: 10rem;
+    margin-bottom: 2rem;
+    color: var(--color-white);
+    font-size: 4rem;
+    text-align: center;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
+}
+
+/* Nav */
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--color-black);
+    padding-left: 37rem;
+}
+
+.navMenu {
+    height: 5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    align-items: center;
+    gap: 3rem;
+}
+
+.logoContainer {
+    border: 2px solid var(--color-white);
+    width: 15rem;
+    height: 3.6rem;
+}
+
+.logo {
+    color: var(--color-white);
+    text-align: center;
+    font-size: 3rem;
+}
+
+.navItem {
+    list-style: none;
+    font-size: 1.4rem;
+    color: var(--color-white);
+}
+
+.navItem a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navItem:hover {
+    color: var(--color-highlight);
+
+}
+
+.logo:hover {
+    font-size: 3.2rem;
+}
+
+/* Main */
+
+main {
+    overflow: clip;
+    margin: 0 auto;
+    width: 60%;
+    padding-top: 5rem;
+    margin-bottom: 7rem;
+}
+
+.pageTitle {
+    margin-bottom: 3rem;
+    font-size: 4.5rem;
+}
+
+.subtitle {
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    color: var(--color-black);
+}
+
+.contentContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    margin-bottom: 10rem;
+}
+
+.text {
+    display: block;
+    font-size: 1.6rem;
+    width: 50%;
+}
+
+.imgContainer {
+    width: 38%;
+}
+
+.contentImg {
+    max-width: 100%;
+}
+
+/* Productos */
+
+.productContainer {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.productContainer img {
+    width: 100%;
+}
+
+.productName {
+    font-size: 2rem;
+}
+
+.productDescription {
+    font-size: 1.5rem;
+}
+
+/* Footer */
+
+footer {
+    padding: 3rem;
+    height: 15rem;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+
+footer h3 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.footerCol1 {
+    width: 20%;
+    height: 100%;
+}
+
+.footerCol2 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+}
+
+.footerItems {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.footerItems li {
+    font-size: 1.4rem;
+    list-style: none;
+}
+
+.footerItems li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footerItems li a:hover {
+    color: var(--color-highlight);
+}
+
+@media screen and (min-width: 1020px) {
+    
+}

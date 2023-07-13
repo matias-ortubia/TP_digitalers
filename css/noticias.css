@@ -1,0 +1,27 @@
+.exampleProducts {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.productContainer {
+    width: 25rem;
+}
+
+.text {
+    width: 100%;
+}
+
+hr {
+    margin-bottom: 3rem;
+}
+
+article {
+    margin-bottom: 4rem;
+}
+
+article h3 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
