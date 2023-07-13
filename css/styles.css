@@ -30,8 +30,20 @@ header {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end;
+    align-items: center;
     gap: 2.5rem;
     height: 15rem;
+}
+
+.bannerLogoContainer {
+    background-color: var(--color-black);
+    border: 5px solid var(--color-white);
+    width: 40rem;
+    height: 10rem;
+    margin-bottom: 2rem;
+    color: var(--color-white);
+    font-size: 4rem;
+    text-align: center;
 }
 
 /* Nav */
