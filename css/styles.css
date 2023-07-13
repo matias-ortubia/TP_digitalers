@@ -44,6 +44,9 @@ header {
     color: var(--color-white);
     font-size: 4rem;
     text-align: center;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
 }
 
 /* Nav */
